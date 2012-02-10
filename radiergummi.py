@@ -2,6 +2,7 @@
 
 # source: https://gist.github.com/113241
 # needs: http://packages.python.org/tweepy/html/
+# license: beerware
 
 import tweepy
 import itertools
