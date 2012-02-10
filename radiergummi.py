@@ -7,10 +7,10 @@
 import tweepy
 import itertools
 
-# OAuth Application settings
+# OAuth application
 consumer_key = 'edit.this'
 consumer_secret = 'edit.this'
-# OAuth account access token
+# OAuth account
 key = 'edit.this'
 secret = 'edit.this'
 
