@@ -22,9 +22,9 @@ direct_messages_threshold = 2
 sent_direct_messages_threshold = 2
 
 # authentication
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret, secure = True)
 auth.set_access_token(key, secret)
-api = tweepy.API(auth)
+api = tweepy.API(auth, secure = True)
 print "authenticated user:", api.me().screen_name
 
 print "deleting statuses, keeping", user_timeline_threshold
