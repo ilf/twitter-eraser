@@ -3,23 +3,24 @@
 import tweepy
 import itertools
 
-# OAuth application
-consumer_key = 'edit.this'
-consumer_secret = 'edit.this'
-# OAuth account
-key = 'edit.this'
-secret = 'edit.this'
-
 # limits to keep
-user_timeline_limit = 4
-retweeted_by_me_limit = 3
-favorites_limit = 3
-direct_messages_limit = 2
-sent_direct_messages_limit = 2
+user_timeline_limit = 25
+retweeted_by_me_limit = 5
+favorites_limit = 5
+direct_messages_limit = 5
+sent_direct_messages_limit = 5
+
+# OAuth application
+consumer_key = "edit.this"
+consumer_secret = "edit.this"
+# OAuth account
+access_token = "edit.this"
+access_token_secret = "edit.this"
 
 # authentication
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret, secure = True)
-auth.set_access_token(key, secret)
+auth.set_access_token(access_token, access_token_secret)
+
 api = tweepy.API(auth, secure = True)
 
 user_timeline = tweepy.Cursor(api.user_timeline).items()
