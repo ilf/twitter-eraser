@@ -4,18 +4,21 @@ import tweepy
 import itertools
 
 # limits to keep
-user_timeline_limit = 25
-retweeted_by_me_limit = 5
-favorites_limit = 5
-direct_messages_limit = 5
-sent_direct_messages_limit = 5
+user_timeline_limit = 20
+retweeted_by_me_limit = 3
+favorites_limit = 3
+direct_messages_limit = 3
+sent_direct_messages_limit = 3
+blocks_limit = 3
+saved_searches_limit = 1
+lists_limit = 0
 
 # OAuth application
-consumer_key = "edit.this"
-consumer_secret = "edit.this"
+consumer_key = "edit.me"
+consumer_secret = "edit.me"
 # OAuth account
-access_token = "edit.this"
-access_token_secret = "edit.this"
+access_token = "edit.me"
+access_token_secret = "edit.me"
 
 # authentication
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret, secure = True)
@@ -47,3 +50,18 @@ sent_direct_messages = tweepy.Cursor(api.sent_direct_messages).items()
 for direct_message in itertools.islice(sent_direct_messages, sent_direct_messages_limit, None):
 	api.destroy_direct_message(direct_message.id)
 	print "deleted sent direct message:", direct_message.id
+
+blocks = tweepy.Cursor(api.blocks).items()
+for block in itertools.islice(blocks, blocks_limit, None):
+	api.destroy_block(block.id)
+	print "deleted block:", block.id
+
+saved_searches = api.saved_searches()
+for saved_search in itertools.islice(saved_searches, saved_searches_limit, None):
+	api.destroy_saved_search(saved_search.id)
+	print "deleted saved_search:", saved_search.id
+
+lists = tweepy.Cursor(api.lists).items()
+for list in itertools.islice(lists, lists_limit, None):
+	api.destroy_list(list.id)
+	print "deleted list:", list.id
