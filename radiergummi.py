@@ -59,7 +59,7 @@ for block in itertools.islice(blocks, blocks_limit, None):
 saved_searches = api.saved_searches()
 for saved_search in itertools.islice(saved_searches, saved_searches_limit, None):
 	api.destroy_saved_search(saved_search.id)
-	print "deleted saved_search:", saved_search.id
+	print "deleted saved search:", saved_search.id
 
 lists = tweepy.Cursor(api.lists).items()
 for list in itertools.islice(lists, lists_limit, None):
