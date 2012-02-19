@@ -14,11 +14,11 @@ saved_searches_limit = 1
 lists_limit = 0
 
 # OAuth application
-consumer_key = "edit.me"
-consumer_secret = "edit.me"
+consumer_key = "get this from https://dev.twitter.com/apps/"
+consumer_secret = "get this from https://dev.twitter.com/apps/"
 # OAuth account
-access_token = "edit.me"
-access_token_secret = "edit.me"
+access_token = "get this from https://dev.twitter.com/apps/"
+access_token_secret = "get this from https://dev.twitter.com/apps/"
 
 # authentication
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret, secure = True)
