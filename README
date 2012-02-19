@@ -1,14 +1,13 @@
 Digital Eraser
 ==============
 
-Digital Eraser deletes Twitter account data. It is intended to be run via cron
-automatically.
+Digital Eraser deletes Twitter account data. It is intended to be run via cron.
 
 Name
 ----
 
 Radiergummi is German for Eraser.
-Google "Digitaler Radiergummi" fr background info.
+Google "Digitaler Radiergummi" for background info.
 
 Description
 -----------
@@ -27,7 +26,7 @@ Digital Eraser can delete these things:
 - saved searches
 - lists
 
-It is designed to be run via cron.
+It is designed to be run via cron automatically and regularly.
 
 Warning
 -------
