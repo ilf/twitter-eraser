@@ -43,7 +43,7 @@ Dave Jeffery: [delete_all_tweets.py](https://gist.github.com/113241)
 Requirements
 ------------
 
-[Tweepy](https://code.google.com/p/tweepy/) - A Twitter library for Python
+[Tweepy](https://github.com/tweepy/tweepy/) - A Twitter library for Python
 
 Configuration
 -------------
