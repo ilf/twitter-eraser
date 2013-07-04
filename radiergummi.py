@@ -3,7 +3,7 @@
 import tweepy
 import itertools
 
-# limits to keep
+# item limits to keep
 user_timeline_limit = 20
 retweeted_by_me_limit = 3
 favorites_limit = 3
