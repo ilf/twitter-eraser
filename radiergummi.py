@@ -29,7 +29,7 @@ for status in itertools.islice(user_timeline, user_timeline_limit, None):
 	api.destroy_status(status.id)
 	print "deleted status:", status.id
 
-favorites = tweepy.Cursor(api.favorites).items()
+favorites = api.favorites()
 for status in itertools.islice(favorites, favorites_limit, None):
 	api.destroy_favorite(status.id)
 	print "deleted favorite:", status.id
