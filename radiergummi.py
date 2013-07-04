@@ -5,13 +5,11 @@ import itertools
 
 # item limits to keep
 user_timeline_limit = 20
-retweeted_by_me_limit = 3
 favorites_limit = 3
 direct_messages_limit = 3
 sent_direct_messages_limit = 3
 blocks_limit = 3
 saved_searches_limit = 1
-lists_limit = 0
 
 # OAuth application
 consumer_key = "get this from https://dev.twitter.com/apps/"
@@ -55,8 +53,3 @@ saved_searches = api.saved_searches()
 for saved_search in itertools.islice(saved_searches, saved_searches_limit, None):
 	api.destroy_saved_search(saved_search.id)
 	print "deleted saved search:", saved_search.id
-
-lists = tweepy.Cursor(api.lists).items()
-for list in itertools.islice(lists, lists_limit, None):
-	api.destroy_list(list.id)
-	print "deleted list:", list.id
