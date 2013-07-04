@@ -31,11 +31,6 @@ for status in itertools.islice(user_timeline, user_timeline_limit, None):
 	api.destroy_status(status.id)
 	print "deleted status:", status.id
 
-retweeted_by_me = tweepy.Cursor(api.retweeted_by_me).items()
-for status in itertools.islice(retweeted_by_me, retweeted_by_me_limit, None):
-	api.destroy_status(status.id)
-	print "deleted retweet:", status.id
-
 favorites = tweepy.Cursor(api.favorites).items()
 for status in itertools.islice(favorites, favorites_limit, None):
 	api.destroy_favorite(status.id)
