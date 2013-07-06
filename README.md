@@ -20,13 +20,11 @@ Especially since I have my own archive via mail and client logs.
 
 Digital Eraser can delete these things:
 
-- status messages
-- retweets
+- status messages, including retweets
 - favorites
 - direct messages: sent and received
 - blocks
 - saved searches
-- lists
 
 It is designed to be run via cron automatically and regularly.
 
