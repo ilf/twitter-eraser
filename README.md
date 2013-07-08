@@ -57,7 +57,7 @@ Notes
 The Twitter API seems to have a hard time with old content. An initial deletion
 to the specified limits will take a while.
 
-You will probably see a few tweepy.error.TweepError. These are Twitters fault:
+On first run, you will probably see a few errors. These are Twitters fault:
 
 - Twitter error response: status code = 503
 - No status found with that ID.
