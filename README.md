@@ -62,6 +62,10 @@ On first run, you will probably see a few errors. These are Twitters fault:
 - Twitter error response: status code = 503
 - No status found with that ID.
 
+Twitters "Tweet Count" of a profile is not accurate. It seems to be about 20
+Tweets over the actual count. Count them manually, and you will see Twitter
+Eraser is correct, Twitter not.
+
 License
 -------
 
