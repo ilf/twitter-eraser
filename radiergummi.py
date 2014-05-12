@@ -12,11 +12,11 @@ blocks_limit = 3
 saved_searches_limit = 1
 
 # OAuth application
-consumer_key = "get this from https://dev.twitter.com/apps/"
-consumer_secret = "get this from https://dev.twitter.com/apps/"
+consumer_key = "get this from https://apps.twitter.com/"
+consumer_secret = "get this from https://apps.twitter.com/"
 # OAuth account
-access_token = "get this from https://dev.twitter.com/apps/"
-access_token_secret = "get this from https://dev.twitter.com/apps/"
+access_token = "get this from https://apps.twitter.com/"
+access_token_secret = "get this from https://apps.twitter.com/"
 
 # authentication
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret, secure = True)
