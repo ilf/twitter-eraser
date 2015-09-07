@@ -20,10 +20,10 @@ access_token = "get this from https://apps.twitter.com/"
 access_token_secret = "get this from https://apps.twitter.com/"
 
 # authentication
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret, secure = True)
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 
-api = tweepy.API(auth, secure = True)
+api = tweepy.API(auth)
 
 user_timeline = tweepy.Cursor(api.user_timeline).items()
 for status in itertools.islice(user_timeline, user_timeline_limit, None):
