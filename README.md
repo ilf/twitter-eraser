@@ -6,17 +6,15 @@ Digital Eraser deletes Twitter account data. It is intended to be run via cron.
 Name
 ----
 
-Radiergummi is german for "eraser".
+Radiergummi is German for "eraser".
 
-Google "[Digitaler Radiergummi](https://www.google.com/search?q=%22Digitaler+Radiergummi%22)" for background info.
+See [Delete: The Virtue of Forgetting in the Digital Age](http://press.princeton.edu/titles/9436.html) for more background information.
 
 Description
 -----------
 
 Twitter is a (near) real time medium. It doesn't need to keep an archive of
-everything I have ever done on there.
-
-Especially since I have my own archive via mail and client logs.
+everything you have ever done.
 
 Digital Eraser can delete these things:
 
