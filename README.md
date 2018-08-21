@@ -65,4 +65,4 @@ Twitters "Tweet Count" of a profile is not accurate. It seems to be about 20 Twe
 License
 -------
 
-[HESSLA](https://web.archive.org/web/20161202010051/http://www.hacktivismo.com/about/hessla.php). But I also [like beer](https://en.wikipedia.org/wiki/Beerware).
+[HESSLA](http://www.hacktivismo.com/about/hessla.php). But I also [like beer](https://en.wikipedia.org/wiki/Beerware).
