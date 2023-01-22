@@ -28,22 +28,22 @@ for status in itertools.islice(user_timeline, user_timeline_limit, None):
 	API.destroy_status(status.id)
 	print("deleted status:", status.id)
 
-favorites = API.favorites()
+favorites = API.get_favorites()
 for status in itertools.islice(favorites, favorites_limit, None):
 	API.destroy_favorite(status.id)
 	print("deleted favorite:", status.id)
 
-direct_messages = API.direct_messages()
+direct_messages = API.get_direct_messages()
 for direct_message in itertools.islice(direct_messages, direct_messages_limit, None):
 	API.destroy_direct_message(direct_message.id)
 	print("deleted direct message:", direct_message.id)
 
-blocks = API.blocks()
+blocks = API.get_blocks()
 for block in itertools.islice(blocks, blocks_limit, None):
 	API.destroy_block(block.id)
 	print("deleted block:", block.id)
 
-saved_searches = API.saved_searches()
+saved_searches = API.get_saved_searches()
 for saved_search in itertools.islice(saved_searches, saved_searches_limit, None):
 	API.destroy_saved_search(saved_search.id)
 	print("deleted saved search:", saved_search.id)
