@@ -7,7 +7,6 @@ import itertools
 user_timeline_limit = 20
 favorites_limit = 3
 direct_messages_limit = 3
-sent_direct_messages_limit = 3
 blocks_limit = 3
 saved_searches_limit = 1
 
@@ -38,11 +37,6 @@ direct_messages = tweepy.Cursor(api.direct_messages).items()
 for direct_message in itertools.islice(direct_messages, direct_messages_limit, None):
 	api.destroy_direct_message(direct_message.id)
 	print("deleted direct message:", direct_message.id)
-
-sent_direct_messages = tweepy.Cursor(api.sent_direct_messages).items()
-for direct_message in itertools.islice(sent_direct_messages, sent_direct_messages_limit, None):
-	api.destroy_direct_message(direct_message.id)
-	print("deleted sent direct message:", direct_message.id)
 
 blocks = tweepy.Cursor(api.blocks).items()
 for block in itertools.islice(blocks, blocks_limit, None):
