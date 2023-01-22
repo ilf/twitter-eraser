@@ -23,22 +23,22 @@ auth.set_access_token(access_token, access_token_secret)
 
 API = tweepy.API(auth)
 
-user_timeline = tweepy.Cursor(API.user_timeline).items()
+user_timeline = API.user_timeline()
 for status in itertools.islice(user_timeline, user_timeline_limit, None):
 	API.destroy_status(status.id)
 	print("deleted status:", status.id)
 
-favorites = tweepy.Cursor(API.favorites).items()
+favorites = API.favorites()
 for status in itertools.islice(favorites, favorites_limit, None):
 	API.destroy_favorite(status.id)
 	print("deleted favorite:", status.id)
 
-direct_messages = tweepy.Cursor(API.direct_messages).items()
+direct_messages = API.direct_messages()
 for direct_message in itertools.islice(direct_messages, direct_messages_limit, None):
 	API.destroy_direct_message(direct_message.id)
 	print("deleted direct message:", direct_message.id)
 
-blocks = tweepy.Cursor(API.blocks).items()
+blocks = API.blocks()
 for block in itertools.islice(blocks, blocks_limit, None):
 	API.destroy_block(block.id)
 	print("deleted block:", block.id)
