@@ -3,6 +3,11 @@ Digital Eraser
 
 Digital Eraser deletes Twitter account data. It is intended to be run via cron.
 
+Status
+------
+
+Since Twitter killed free and open API access, you should delete your entire account instead.
+
 Name
 ----
 
@@ -11,7 +16,7 @@ Radiergummi is German for "eraser".
 Reason
 ------
 
-Read [Delete: The Virtue of Forgetting in the Digital Age](http://press.princeton.edu/titles/9436.html).
+[Delete: The Virtue of Forgetting in the Digital Age](http://press.princeton.edu/titles/9436.html).
 
 Description
 -----------
@@ -65,4 +70,4 @@ Twitters "Tweet Count" of a profile is not accurate. It seems to be about 20 Twe
 License
 -------
 
-[HESSLA](http://www.hacktivismo.com/about/hessla.php). But I also [like beer](https://en.wikipedia.org/wiki/Beerware).
+[HESSLA](https://en.wikipedia.org/wiki/Hacktivismo_Enhanced-Source_Software_License_Agreement). But I also [like beer](https://en.wikipedia.org/wiki/Beerware).
